@@ -2,16 +2,16 @@ import React from 'react';
 
 import GlobalStyles from './styles/GlobalStyles';
 import Layout from './components/Layout';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <>
     <Layout>
-      <h1>Hello</h1>
+      <NavBar />
     </Layout>
 
     <GlobalStyles />
-     
     </>
   );
 }
