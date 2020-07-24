@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+  <br>
 
-In the project directory, you can run:
+  <h1>Clone do Twitter  </h1>
+  <br>
+</div>
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">Clone reproduzindo algumas funcionalidades do twitter.</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<div align="center">
 
-### `yarn test`
+[Referencia Youtube Rocketseat](https://www.youtube.com/watch?v=K-8z_4xvT3o&feature=youtu.be)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div>
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>
 
-### `yarn eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<div align="center">
+  <img src="./public/Twitter.gif" alt="demo" width="60%">
+</div>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<hr />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Features
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- ⚛️ **React** — A web framework for Node Js.
+- ☑️ **TypeScript** — TypeScript is a superset of JavaScript developed by Microsoft that adds typing.
+- 📘 **CSS** — CSS is a language that describes the style of an HTML document.
+- 📘 **Hooks** — useState, useCallback, useEffect, useLayoutEffect, useRef, useContext.
+- 📘 **Frame Motion** — CSS is a language that describes the style of an HTML document.
 
-## Learn More
+## Getting started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Describe here the way to use/install your project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone this repo using `https://github.com/Laerciosantosn/Clone-Twitter.git`
+2. Move yourself to the appropriate directory: `cd Clone-Twitter`<br />
+3. Run `code .` to open project in VsCode<br />
 
-### Code Splitting
+#### Getting started with the backend server
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+1. Run `yarn` to install the packages dependecies
 
-### Analyzing the Bundle Size
+#### Getting started with the frontend
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+1. Run `yarn start` to start the web application
+2. In your browser open `http://localhost:3000` to start the web application
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+## License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
