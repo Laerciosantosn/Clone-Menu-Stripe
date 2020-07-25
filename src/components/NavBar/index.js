@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { Products, Developers, Company } from '../Content';
+import { DropdownOption, DropdownProvider, DropdownRoot } from '../Dropdown';
 import { Container, DropdownStyles } from './styles';
-import { DropdownOption, DropdownProvider } from '../Dropdown';
 
 function NavBar() {
   return (
@@ -13,23 +13,25 @@ function NavBar() {
             <li>
               <DropdownOption
                 name="Produtos"
-                content={() => <h1>{Products}</h1>}
+                content={Products}
               />
             </li>
             <li>
               <DropdownOption
                 name="Desenvolvedores"
-                content={() => <h1>{Developers}</h1>}
+                content={Developers}
               />
             </li>
             <li>
               <DropdownOption
                 name="Empresa"
-                content={() => <h1>{Company}</h1>}
+                content={Company}
               />
             </li>
           </ul>
         </Container>
+
+        <DropdownRoot />
       </DropdownStyles>
     </DropdownProvider>
   )

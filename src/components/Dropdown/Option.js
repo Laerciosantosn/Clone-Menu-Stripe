@@ -1,12 +1,12 @@
-import React, { useRef, useState, useContext, useEffect} from 'react';
+import React, { useRef, useState, useContext, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-import { Context } from './Provider';
 import { useDimensions } from './dimensions';
+import { Context } from './Provider';
 
 let lastOptionId = 0;
 
-export function DropdownOption({name, content: Content, backgroundHeight}) {
+export function DropdownOption({ name, content: Content, backgroundHeight }) {
   const idRef = useRef(++lastOptionId);
   const id = idRef.current;
 
@@ -16,51 +16,54 @@ export function DropdownOption({name, content: Content, backgroundHeight}) {
   const {
     registerOption,
     updateOptionProps,
-    deleteOptionByid,
+    deleteOptionById,
     setTargetId,
     targetId,
   } = useContext(Context);
 
   useEffect(() => {
     if (!registered && optionDimensions) {
-      const WrapperContent = () => {
+      const WrappedContent = () => {
         const contentRef = useRef();
 
         useEffect(() => {
-         const contentDimensioins = contentRef.current.getBoundingClientRect();
-         updateOptionProps(id, { contentDimensioins })
-        }, [])
+          const contentDimensions = contentRef.current.getBoundingClientRect();
+          updateOptionProps(id, { contentDimensions });
+        }, []);
 
         return (
           <div ref={contentRef}>
             <Content />
           </div>
-        )
-      }
+        );
+      };
 
       registerOption({
         id,
         optionDimensions,
         optionCenterX: optionDimensions.x + optionDimensions.width / 2,
-        WrapperContent,
+        WrappedContent,
         backgroundHeight,
-      })
-      setRegistered(true)
+      });
+
+      setRegistered(true);
     } else if (registered && optionDimensions) {
       updateOptionProps(id, {
         optionDimensions,
         optionCenterX: optionDimensions.x + optionDimensions.width / 2,
-      })
+      });
     }
   }, [
-      registerOption, 
-      id, 
-      registered, 
-      optionDimensions,
-      updateOptionProps, 
-      deleteOptionByid, 
-      backgroundHeight, 
+    registerOption,
+    id,
+    registered,
+    optionDimensions,
+    updateOptionProps,
+    deleteOptionById,
+    backgroundHeight,
   ]);
+
+  useEffect(() => deleteOptionById(id), [deleteOptionById, id]);
 
   const handleOpen = () => setTargetId(id);
   const handleClose = () => setTargetId(null);
@@ -73,18 +76,17 @@ export function DropdownOption({name, content: Content, backgroundHeight}) {
   };
 
   return (
-    <motion.button 
-      className="dorpdown-option"
+    <motion.button
+      className="dropdown-option"
       ref={optionHook}
       onMouseDown={handleClick}
-      onHoverStart={() => !window.isMoblie && handleOpen()}
-      onHoverEnd={() => !window.isMoblie && handleClose()}
+      onHoverStart={() => !window.isMobile && handleOpen()}
+      onHoverEnd={() => !window.isMobile && handleClose()}
       onTouchStart={handleTouch}
       onFocus={handleOpen}
       onBlur={handleClose}
     >
       {name}
     </motion.button>
-
-  )
+  );
 }

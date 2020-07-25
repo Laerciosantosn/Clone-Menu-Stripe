@@ -15,49 +15,50 @@ export function DropdownProvider({ children }) {
       WrappedContent,
       backgroundHeight,
     }) => {
-     setOptions((items) => [
-       ...items,
-       {
-        id,
-        optionDimensions,
-        optionCenterX,
-        WrappedContent,
-        backgroundHeight,
-       }
-     ]);
+      setOptions((items) => [
+        ...items,
+        {
+          id,
+          optionDimensions,
+          optionCenterX,
+          WrappedContent,
+          backgroundHeight,
+        },
+      ]);
     },
-    [setOptions],
+    [setOptions]
   );
 
- const updateOptionProps = useCallback(
+  const updateOptionProps = useCallback(
     (optionId, props) => {
       setOptions((items) =>
         items.map((item) => {
           if (item.id === optionId) {
             item = { ...item, ...props };
           }
+
           return item;
         })
       );
     },
-    [setOptions],
+    [setOptions]
   );
 
   const getOptionById = useCallback(
-    ((id) => options.find((item) => item.id === id)),
-    [options],
+    (id) => options.find((item) => item.id === id),
+    [options]
   );
 
-  const deleteOptionByid = useCallback((id) =>   {
-    setOptions((items) => items.filter(item => item.id !== id));
-  },
-    [setOptions],
+  const deleteOptionById = useCallback(
+    (id) => {
+      setOptions((items) => items.filter((item) => item.id !== id));
+    },
+    [setOptions]
   );
-
 
   useEffect(() => {
-    if (targetId !== null)  setCachedId(targetId);
-  }, [targetId])
+    if (targetId !== null) setCachedId(targetId);
+  }, [targetId]);
 
   return (
     <Context.Provider
@@ -65,16 +66,15 @@ export function DropdownProvider({ children }) {
         registerOption,
         updateOptionProps,
         getOptionById,
-        deleteOptionByid,
+        deleteOptionById,
         options,
         targetId,
         setTargetId,
         cachedId,
-        setCachedId
+        setCachedId,
       }}
     >
       {children}
     </Context.Provider>
   );
-
 }
