@@ -2,10 +2,11 @@ import React from 'react';
 
 import { Products, Developers, Company } from '../Content';
 import { DropdownOption, DropdownProvider, DropdownRoot } from '../Dropdown';
-import { Container, DropdownStyles } from './styles';
+import { Container, DropdownStyles, Main } from './styles';
 
 function NavBar() {
   return (
+    <>
     <DropdownProvider>
       <DropdownStyles>
         <Container>
@@ -14,26 +15,40 @@ function NavBar() {
               <DropdownOption
                 name="Produtos"
                 content={Products}
+                backgroundHeight={286}
               />
             </li>
             <li>
               <DropdownOption
                 name="Desenvolvedores"
                 content={Developers}
+                backgroundHeight={167}
               />
             </li>
             <li>
               <DropdownOption
                 name="Empresa"
                 content={Company}
+                backgroundHeight={215}
               />
             </li>
           </ul>
         </Container>
-
         <DropdownRoot />
       </DropdownStyles>
     </DropdownProvider>
+        <Main>
+          <div className="header">
+            <div id="stripes">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </Main>
+        </>
   )
 }
 

@@ -38,7 +38,7 @@
 - ⚛️ **React** — A web framework for Node Js.
 - ☑️ **TypeScript** — TypeScript is a superset of JavaScript developed by Microsoft that adds typing.
 - 📘 **CSS** — CSS is a language that describes the style of an HTML document.
-- 📘 **Hooks** — useState, useCallback, useEffect, useLayoutEffect, useRef, useContext.
+- 📘 **Hooks** — useState, useCallback, useEffect, useLayoutEffect, useRef, useContext, useMemo.
 - 📘 **Frame Motion** — CSS is a language that describes the style of an HTML document.
 
 ## Getting started
