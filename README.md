@@ -2,16 +2,16 @@
 
   <br>
 
-  <h1>Clone do Twitter  </h1>
+  <h1>Clone do menu do Stripe  </h1>
   <br>
 </div>
 
 
-<p align="center">Clone reproduzindo algumas funcionalidades do twitter.</p>
+<p align="center">Clone reproduzindo a animação do menú do stripe.</p>
 
 <div align="center">
 
-[Referencia Youtube Rocketseat](https://www.youtube.com/watch?v=K-8z_4xvT3o&feature=youtu.be)
+[Referencia Youtube Rocketseat](https://www.youtube.com/watch?v=B7V0q0ZSz2o)
 
 </div>
 
@@ -28,7 +28,7 @@
 <br>
 
 <div align="center">
-  <img src="./public/Twitter.gif" alt="demo" width="60%">
+  <img src="./public/Stripe.gif" alt="demo" width="60%">
 </div>
 
 <hr />
@@ -36,17 +36,16 @@
 ## Features
 
 - ⚛️ **React** — A web framework for Node Js.
-- ☑️ **TypeScript** — TypeScript is a superset of JavaScript developed by Microsoft that adds typing.
 - 📘 **CSS** — CSS is a language that describes the style of an HTML document.
 - 📘 **Hooks** — useState, useCallback, useEffect, useLayoutEffect, useRef, useContext, useMemo.
-- 📘 **Frame Motion** — CSS is a language that describes the style of an HTML document.
+- 📘 **Framer Motion** — A production-ready motion library for React. Utilize the power behind Framer, the best prototyping tool for teams. Proudly open source..
 
 ## Getting started
 
 Describe here the way to use/install your project
 
-1. Clone this repo using `https://github.com/Laerciosantosn/Clone-Twitter.git`
-2. Move yourself to the appropriate directory: `cd Clone-Twitter`<br />
+1. Clone this repo using `https://github.com/Laerciosantosn/Clone-Menu-Stripe.git`
+2. Move yourself to the appropriate directory: `cd Clone-Menu-Stripe`<br />
 3. Run `code .` to open project in VsCode<br />
 
 #### Getting started with the backend server
